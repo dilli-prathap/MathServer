@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Calculator</title>
+</head>
+<body>
+    <div>
+        <center><div class="one"><h1>POWER CALCULATOR</h1></div>
+            <form align="center" method="POST">
+                {% csrf_token %}
+                Intensity <input name="I" value="{{i}}">
+                <br>
+                <br>
+                Resistance <input name="R" value="{{r}}">
+                <br>
+                <br>
+                <input type="submit" value="calculate">
+                <br>
+                <br>
+                Power <input name="power"value={{power}}>
+            </form>
+        </center>
+    </div>
+</body>
+</html>
